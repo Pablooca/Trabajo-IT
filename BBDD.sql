@@ -31,8 +31,8 @@ ADD CONSTRAINT FK_empleado_departamento FOREIGN KEY (departamento) REFERENCES De
 CREATE TABLE Evaluacion (
     ID INT PRIMARY KEY,
     DNI VARCHAR(20) NOT NULL,
-    año INT NOT NULL,
-    compañerismo INT NOT NULL,
+    anyo INT NOT NULL,
+    companyerismo INT NOT NULL,
     eficiencia INT NOT NULL,
     iniciativa INT NOT NULL,
     liderazgo INT NOT NULL,
