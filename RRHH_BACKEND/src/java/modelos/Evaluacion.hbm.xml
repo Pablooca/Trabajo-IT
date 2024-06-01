@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jun-2024 18:16:29 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Evaluacion" table="evaluacion" catalog="trabajo_it" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="dni" type="string">
+            <column name="DNI" length="20" not-null="true" />
+        </property>
+        <property name="anyo" type="int">
+            <column name="anyo" not-null="true" />
+        </property>
+        <property name="companyerismo" type="int">
+            <column name="companyerismo" not-null="true" />
+        </property>
+        <property name="eficiencia" type="int">
+            <column name="eficiencia" not-null="true" />
+        </property>
+        <property name="iniciativa" type="int">
+            <column name="iniciativa" not-null="true" />
+        </property>
+        <property name="liderazgo" type="int">
+            <column name="liderazgo" not-null="true" />
+        </property>
+        <property name="notaMedia" type="big_decimal">
+            <column name="nota_media" precision="3" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

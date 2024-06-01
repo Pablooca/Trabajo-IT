@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jun-2024 18:16:29 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Ascensos" table="ascensos" catalog="trabajo_it" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="cargo" type="string">
+            <column name="cargo" length="50" not-null="true" />
+        </property>
+        <property name="fechaInicio" type="date">
+            <column name="fecha_inicio" length="10" not-null="true" />
+        </property>
+        <property name="fechaFin" type="date">
+            <column name="fecha_fin" length="10" />
+        </property>
+        <property name="jefeDepartamento" type="string">
+            <column name="jefe_departamento" length="20" not-null="true" />
+        </property>
+        <property name="requisitos" type="string">
+            <column name="requisitos" />
+        </property>
+    </class>
+</hibernate-mapping>

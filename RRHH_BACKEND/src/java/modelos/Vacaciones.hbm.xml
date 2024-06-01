@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01-jun-2024 18:16:29 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Vacaciones" table="vacaciones" catalog="trabajo_it" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="dni" type="string">
+            <column name="DNI" length="20" not-null="true" />
+        </property>
+        <property name="fechaInicio" type="date">
+            <column name="fecha_inicio" length="10" not-null="true" />
+        </property>
+        <property name="fechaFin" type="date">
+            <column name="fecha_fin" length="10" not-null="true" />
+        </property>
+        <property name="motivo" type="string">
+            <column name="motivo" />
+        </property>
+    </class>
+</hibernate-mapping>
