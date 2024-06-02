@@ -10,7 +10,7 @@
     <body>
         <h1>Operaciones CRUD Empleados</h1>
         <h2>Añadir Empleado</h2>
-        <s:form>
+        <s:form action="registrarEmpleado">
             <s:textfield name="dni" label="DNI"/>
             <s:textfield name="nombre" label="Nombre"/>
             <s:textfield name="apellidos" label="Apellidos"/>
@@ -19,12 +19,12 @@
             <s:submit value="Añadir Empleado" />
         </s:form>
         <h2>Buscar Empleado</h2>
-        <s:form>
+        <s:form action="buscarEmpleado">
             <s:textfield name="dni" label="DNI"/>
             <s:submit value="Buscar Empleado"/>
         </s:form>
         <h2>Eliminar Empleado</h2>
-        <s:form>
+        <s:form action="eliminarEmpleado">
             <s:textfield name="dni" label="DNI"/>
             <s:submit value="Eliminar Empleado"/>
         </s:form>

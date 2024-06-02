@@ -3,8 +3,30 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <!-- Configuration for the default package. -->
+    <!-- ESTÁ PUESTO LOGIN.JSP COMO PRUEBA -->
     <package name="default" extends="struts-default">
+        <action name="login" class="acciones.login">
+            <result name="success">/crudEmpleado.jsp</result>
+            <result name="input">/login.jsp</result>
+        </action>
+        <action name="registrarEmpleado" class="acciones.registrarEmpleado">
+            <result name="success">/login.jsp</result>
+            <result name="input">/crudEmpleado.jsp</result>
+        </action>
+        <action name="buscarEmpleado" class="acciones.buscarEmpleado">
+            <result name="success">/login.jsp</result>
+            <result name="input">/crudEmpleado.jsp</result>
+        </action>
+        <action name="eliminarEmpleado" class="acciones.eliminarEmpleado">
+            <result name="success">/login.jsp</result>
+        </action>
         
-    </package>
+        <action name="registrarDepartamento" class="acciones.registrarDepartamento">
+            <result name="success">/crudDepartamento.jsp</result>
+            <result name="input">/crudDepartamento.jsp</result>
+        </action>
+        <action name="buscarDepartamento" class="acciones.buscarDepartamento"></action>
+        <action name="eliminarDepartamento" class="acciones.eliminarDepartamento"></action>
+        
+    </package> 
 </struts>

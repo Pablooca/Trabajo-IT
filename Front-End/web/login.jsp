@@ -10,7 +10,7 @@
     <body>
         <div class="form-container">
             <h1>Login</h1>
-            <s:form>
+            <s:form action="login">
                 <s:textfield name="dni" label="DNI"/>
                 <s:password name="password" label="Password"/>
                 <s:submit value="Iniciar Sesion" />
