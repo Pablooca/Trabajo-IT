@@ -46,5 +46,13 @@
             <result name="success">/crudNomina.jsp</result>
         </action>
         
+        <action name="eliminarVacaciones" class="acciones.eliminarVacaciones"></action>
+        <action name="buscarVacaciones" class="acciones.buscarVacaciones"></action>
+        <action name="registrarVacaciones" class="acciones.registrarVacaciones">
+            <result name="success">/crudVacaciones.jsp</result>
+        </action>
+        <action name="actualizarVacaciones" class="acciones.actualizarVacaciones">
+            <result name="success">/crudVacaciones.jsp</result>
+        </action>
     </package> 
 </struts>

@@ -30,6 +30,7 @@
         </s:form>
         <h2>Actualizar Ascenso</h2>
         <s:form action="actualizarAscenso">
+            <s:textfield name="id" label="id"/>
             <s:textfield name="cargo" label="cargo"/>
             <s:textfield name="fecha_inicio" label="fecha_inicio"/>
             <s:textfield name="fecha_fin" label="fecha_fin"/>

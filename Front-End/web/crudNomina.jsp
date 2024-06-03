@@ -27,6 +27,7 @@
         </s:form>
         <h2>Actualizar Nomina</h2>
         <s:form action="actualizarNomina">
+            <s:textfield name="id" label="id"/>
             <s:textfield name="salario" label="salario"/>
             <s:textfield name="DNI" label="DNI"/>
             <s:submit value="Modificar Nomina" />
