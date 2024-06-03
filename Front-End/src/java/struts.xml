@@ -25,43 +25,71 @@
             <result name="success">/crudDepartamento.jsp</result>
             <result name="input">/crudDepartamento.jsp</result>
         </action>
-        <action name="buscarDepartamento" class="acciones.buscarDepartamento"></action>
-        <action name="eliminarDepartamento" class="acciones.eliminarDepartamento"></action>
+        <action name="buscarDepartamento" class="acciones.buscarDepartamento">
+            <result name="success">/crudDepartamento.jsp</result>
+        </action>
+        <action name="eliminarDepartamento" class="acciones.eliminarDepartamento">
+            <result name="success">/crudDepartamento.jsp</result>
+        </action>
         
-        <action name="eliminarAscenso" class="acciones.eliminarAscenso"></action>
-        <action name="buscarAscenso" class="acciones.buscarAscenso"></action>
+        <action name="eliminarAscenso" class="acciones.eliminarAscenso">
+            <result name="success">/crudAscensos.jsp</result>
+        </action>
+        <action name="buscarAscenso" class="acciones.buscarAscenso">
+            <result name="success">/crudAscensos.jsp</result>
+        </action>
         <action name="registrarAscenso" class="acciones.registrarAscenso">
             <result name="success">/crudAscensos.jsp</result>
+            <result name="input">/crudAscensos.jsp</result>
         </action>
         <action name="actualizarAscenso" class="acciones.actualizarAscenso">
             <result name="success">/crudAscensos.jsp</result>
+            <result name="input">/crudAscensos.jsp</result>
         </action>
         
-        <action name="eliminarNomina" class="acciones.eliminarNomina"></action>
-        <action name="buscarNomina" class="acciones.buscarNomina"></action>
+        <action name="eliminarNomina" class="acciones.eliminarNomina">
+            <result name="success">/crudNomina.jsp</result>
+        </action>
+        <action name="buscarNomina" class="acciones.buscarNomina">
+            <result name="success">/crudNomina.jsp</result>
+        </action>
         <action name="registrarNomina" class="acciones.registrarNomina">
             <result name="success">/crudNomina.jsp</result>
+            <result name="input">/crudNomina.jsp</result>
         </action>
         <action name="actualizarNomina" class="acciones.actualizarNomina">
             <result name="success">/crudNomina.jsp</result>
+            <result name="input">/crudNomina.jsp</result>
         </action>
         
-        <action name="eliminarVacaciones" class="acciones.eliminarVacaciones"></action>
-        <action name="buscarVacaciones" class="acciones.buscarVacaciones"></action>
+        <action name="eliminarVacaciones" class="acciones.eliminarVacaciones">
+            <result name="success">/crudVacaciones.jsp</result>
+        </action>
+        <action name="buscarVacaciones" class="acciones.buscarVacaciones">
+            <result name="success">/crudVacaciones.jsp</result>
+        </action>
         <action name="registrarVacaciones" class="acciones.registrarVacaciones">
             <result name="success">/crudVacaciones.jsp</result>
+            <result name="input">/crudVacaciones.jsp</result>
         </action>
         <action name="actualizarVacaciones" class="acciones.actualizarVacaciones">
             <result name="success">/crudVacaciones.jsp</result>
+            <result name="input">/crudVacaciones.jsp</result>
         </action>
         
-        <action name="eliminarValoracion" class="acciones.eliminarValoracion"></action>
-        <action name="buscarValoracion" class="acciones.buscarValoracion"></action>
+        <action name="eliminarValoracion" class="acciones.eliminarValoracion">
+            <result name="success">/crudValoracion.jsp</result>
+        </action>
+        <action name="buscarValoracion" class="acciones.buscarValoracion">
+            <result name="success">/crudValoracion.jsp</result>
+        </action>
         <action name="registrarValoracion" class="acciones.registrarValoracion">
             <result name="success">/crudValoracion.jsp</result>
+            <result name="input">/crudValoracion.jsp</result>
         </action>
         <action name="actualizarValoracion" class="acciones.actualizarValoracion">
             <result name="success">/crudValoracion.jsp</result>
+            <result name="input">/crudValoracion.jsp</result>
         </action>
     </package> 
 </struts>
