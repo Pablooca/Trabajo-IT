@@ -54,5 +54,14 @@
         <action name="actualizarVacaciones" class="acciones.actualizarVacaciones">
             <result name="success">/crudVacaciones.jsp</result>
         </action>
+        
+        <action name="eliminarValoracion" class="acciones.eliminarValoracion"></action>
+        <action name="buscarValoracion" class="acciones.buscarValoracion"></action>
+        <action name="registrarValoracion" class="acciones.registrarValoracion">
+            <result name="success">/crudValoracion.jsp</result>
+        </action>
+        <action name="actualizarValoracion" class="acciones.actualizarValoracion">
+            <result name="success">/crudValoracion.jsp</result>
+        </action>
     </package> 
 </struts>
