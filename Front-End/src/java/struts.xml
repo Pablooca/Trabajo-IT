@@ -28,5 +28,14 @@
         <action name="buscarDepartamento" class="acciones.buscarDepartamento"></action>
         <action name="eliminarDepartamento" class="acciones.eliminarDepartamento"></action>
         
+        <action name="eliminarAscenso" class="acciones.eliminarAscenso"></action>
+        <action name="buscarAscenso" class="acciones.buscarAscenso"></action>
+        <action name="registrarAscenso" class="acciones.registrarAscenso">
+            <result name="success">/crudAscensos.jsp</result>
+        </action>
+        <action name="actualizarAscenso" class="acciones.actualizarAscenso">
+            <result name="success">/crudAscensos.jsp</result>
+        </action>
+        
     </package> 
 </struts>

@@ -25,9 +25,9 @@
         <h2>Eliminar Empleado</h2>
         <s:form action="eliminarDepartamento">
             <s:textfield name="id" label="Identificador del Departamento"/>
-            <s:submit value="Eliminar Empleado"/>
+            <s:submit value="Eliminar Departamento"/>
         </s:form>
-        <h2>Actualizar Empleado</h2>
+        <h2>Actualizar Departamento</h2>
         <s:form>
             <s:textfield name="id" label="Identificador"/>
             <s:textfield name="nombre" label="Nombre del Departamento"/>
