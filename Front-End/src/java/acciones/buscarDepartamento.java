@@ -13,6 +13,8 @@ import com.opensymphony.xwork2.ActionSupport;
  */
 public class buscarDepartamento extends ActionSupport {
     
+    private int id;
+    
     public buscarDepartamento() {
     }
     

@@ -1,24 +1,16 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package acciones;
 
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionSupport;
 
-/**
- *
- * @author alex_
- */
-public class buscarEvaluacion extends ActionSupport{
+public class buscarEvaluacion extends ActionSupport {
+
     private int id;
 
     public buscarEvaluacion() {
     }
-    
-                    @Override
+
+    @Override
     public String execute() throws Exception {
         return SUCCESS;
     }
@@ -30,6 +22,5 @@ public class buscarEvaluacion extends ActionSupport{
     public void setId(int id) {
         this.id = id;
     }
-    
-    
+
 }

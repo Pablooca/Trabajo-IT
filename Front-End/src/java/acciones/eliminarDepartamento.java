@@ -13,6 +13,8 @@ import com.opensymphony.xwork2.ActionSupport;
  */
 public class eliminarDepartamento extends ActionSupport {
 
+    private int id;
+    
     public eliminarDepartamento() {
     }
 

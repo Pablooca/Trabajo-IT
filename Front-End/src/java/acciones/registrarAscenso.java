@@ -1,19 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package acciones;
 
 import static com.opensymphony.xwork2.Action.SUCCESS;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-/**
- *
- * @author alex_
- */
-public class registrarAscenso extends ActionSupport{
+public class registrarAscenso extends ActionSupport {
+
     private int id;
     private String cargo;
     private Date fecha_inicio;
@@ -28,7 +22,7 @@ public class registrarAscenso extends ActionSupport{
     public String execute() throws Exception {
         return SUCCESS;
     }
-    
+
     public int getId() {
         return id;
     }
@@ -76,9 +70,40 @@ public class registrarAscenso extends ActionSupport{
     public void setRequisitos(String requisitos) {
         this.requisitos = requisitos;
     }
-    
-    
-    
-    
-    
+
+    public void validate() {
+        String patronDNI = "^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKE]$";
+        Pattern patron = Pattern.compile(patronDNI);
+        Matcher matcher = patron.matcher(this.getJefe_departamento());
+        String numeroDNI = "";
+        String letraDNI = "";
+        if (this.getCargo().length() == 0) {
+            addFieldError("cargo", "El cargo debe estar relleno");
+        }
+        if (this.getRequisitos().length() == 0) {
+            addFieldError("requisitos", "Debe haber algún requisito para el ascenso");
+        }
+        if (this.getJefe_departamento().length() == 0) {
+            addFieldError("jefe_departamento", "El jefe de departamento debe estar relleno");
+        } else {
+            numeroDNI = this.getJefe_departamento().substring(0, 8);
+            letraDNI = this.getJefe_departamento().substring(8, 9);
+        }
+        if (this.getJefe_departamento().length() != 9) {
+            addFieldError("jefe_departamento", "El DNI debe tener 9 caracteres");
+        }
+        if (!matcher.matches()) {
+            addFieldError("jefe_departamento", "El DNI no está en el formato correcto");
+        }
+        if (numeroDNI.length() != 0 && letraDNI.compareTo(letraDNI(Integer.parseInt(numeroDNI))) != 0) {
+            addFieldError("jefe_departamento", "La letra es erronea.");
+        }
+    }
+
+    private String letraDNI(int numero) {
+        char caracteres[] = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
+        int resto = numero % 23;
+        return String.valueOf(caracteres[resto]);
+    }
+
 }

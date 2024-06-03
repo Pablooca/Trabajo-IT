@@ -12,8 +12,9 @@ import com.opensymphony.xwork2.ActionSupport;
  *
  * @author alex_
  */
-public class buscarAscenso extends ActionSupport{
-        private int id;
+public class buscarAscenso extends ActionSupport {
+
+    private int id;
 
     public buscarAscenso() {
     }
@@ -25,9 +26,13 @@ public class buscarAscenso extends ActionSupport{
     public void setId(int id) {
         this.id = id;
     }
-        
-            @Override
+
+    @Override
     public String execute() throws Exception {
         return SUCCESS;
+    }
+    
+    public void validate(){
+        
     }
 }
