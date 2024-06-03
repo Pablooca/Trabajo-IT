@@ -5,6 +5,14 @@
 <struts>
     <!-- ESTÁ PUESTO LOGIN.JSP COMO PRUEBA -->
     <package name="default" extends="struts-default">
+        <action name="">
+            <result type="chain">
+                <param name="actionName">mostrarLogin</param>
+            </result>
+        </action>
+        <action name="mostrarLogin" class="acciones.mostrarLogin">
+            <result name="success">/login.jsp</result>
+        </action>
         <action name="login" class="acciones.login">
             <result name="success">/crudEmpleado.jsp</result>
             <result name="input">/login.jsp</result>
