@@ -37,5 +37,14 @@
             <result name="success">/crudAscensos.jsp</result>
         </action>
         
+        <action name="eliminarNomina" class="acciones.eliminarNomina"></action>
+        <action name="buscarNomina" class="acciones.buscarNomina"></action>
+        <action name="registrarNomina" class="acciones.registrarNomina">
+            <result name="success">/crudNomina.jsp</result>
+        </action>
+        <action name="actualizarNomina" class="acciones.actualizarNomina">
+            <result name="success">/crudNomina.jsp</result>
+        </action>
+        
     </package> 
 </struts>
